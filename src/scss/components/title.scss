@@ -1,0 +1,11 @@
+.title {
+  font-family: $yesevaone;
+  font-size: 36px;
+  line-height: 72px;
+  color: $title-color;
+  @media (max-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+  }
+}

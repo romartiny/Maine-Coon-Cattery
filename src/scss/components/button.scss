@@ -1,0 +1,16 @@
+.button {
+  display: inline-block;
+  border: 1px solid #A07B50;
+  padding: 15px 25px;
+  font-family: $roboto;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 700;
+  @media (max-width: $tablet-width) {
+    font-size: 12px;
+  }
+}
+
+.button:hover {
+  color: #A07B50;
+}

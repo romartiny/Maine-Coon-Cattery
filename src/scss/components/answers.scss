@@ -1,0 +1,227 @@
+.answers {
+  background: #1F1C1D;
+  padding-top: 60px;
+  padding-bottom: 130px;
+
+  @media (max-width: $large-width) {
+    padding-top: 121px;
+    padding-bottom: 65px;
+  }
+}
+
+.answers__title-block {
+  padding-top: 20px;
+  padding-bottom: 35px;
+}
+
+.answers__title {
+  margin-left: auto;
+  margin-right: auto;
+  width: 380px;
+  text-align: center;
+}
+
+.answers__content {
+  @media (max-width: $large-width) {
+    margin-left: 40px;
+}
+}
+
+.answers__description {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  @media (max-width: $tablet-width){
+    max-width: 180px;
+ }
+}
+
+.answers__list {
+  list-style: none;
+  counter-reset: num;
+  padding: 0;
+  margin: 0 auto;
+  color: #ddd0c3;
+  line-height: 23px;
+  margin-bottom: 35px;
+  padding-left: 50px;
+  @media (max-width: $tablet-width){
+    margin-left: -85px;
+  }
+}
+
+.answers__question {
+  font-family: $roboto;
+  font-weight: 500;
+  color: #DDD0C3;
+  @media (max-width: $large-width) {
+    max-width: 360px;
+}
+@media (max-width: $tablet-width){
+  font-size: 14px;
+  max-width: 230px;
+}
+}
+
+.answers__list-info {
+  max-width: 793px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  @media (max-width: $large-width) {
+    max-width: 553px;
+}
+@media (max-width: $tablet-width){
+  max-width: 290px;
+}
+}
+
+.answers__text {
+  color: #ddd0c3;
+  font-family: $roboto;
+  font-weight: 300;
+  font-size: 16px;
+  width: 530px;
+  @media (max-width: $large-width) {
+    max-width: 395px;
+}
+@media (max-width: $tablet-width){
+  max-width: 250px;
+}
+}
+
+.answers__button {
+  position: relative;
+  border: 0;
+  border: 1px solid rgba($color: #A07B50, $alpha: 0.41);
+  width: 793px;
+  margin: 0;
+  height: 100%;
+  padding: 40px;
+  outline: none;
+  background-color: transparent;
+  text-align: left;
+  padding-left: 40px;
+  @media (max-width: $large-width) {
+    width: 553px;
+    padding: 20px;
+}
+@media (max-width: $tablet-width){
+  max-width: 290px;
+  max-height: 60px;
+}
+}
+
+.answers__question::before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: #a07b50;
+  content: "+";
+  font-family: $roboto;
+  font-weight: 300;
+  font-size: 40px;
+  width: 100px;
+  height: 100px;
+  top: -1px;
+  right: -1px;
+  box-sizing: border-box;
+  @media (max-width: $large-width) {
+    width: 72px;
+    height: 60px;
+}
+@media (max-width: $tablet-width){
+  max-width: 43px;
+  max-height: 60px;
+}
+}
+
+.answers__question::before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: #a07b50;
+  content: "-";
+  font-family: $roboto;
+  font-weight: 300;
+  font-size: 40px;
+  width: 100px;
+  height: 100px;
+  top: -1px;
+  right: -1px;
+  box-sizing: border-box;
+  @media (max-width: $large-width) {
+    width: 72px;
+    height: 60px;
+}
+@media (max-width: $tablet-width){
+  max-width: 43px;
+  max-height: 60px;
+}
+}
+
+.answers__question::after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  color: #a07b50;
+  font-family: $roboto;
+  font-weight: 700;
+  font-size: 80px;
+  height: 110px;
+  left: -120px;
+  top: -5px;
+  content: "0"counter(num);
+  counter-increment: num;
+  color: #a07b50;
+  @media (max-width: $tablet-width){
+    display: none;
+ }
+}
+
+.answers__info {
+  color: #FFFFFF;
+  border: 1px solid rgba($color: #A07B50, $alpha: 0.41);
+  border-top: 0;
+  padding: 40px;
+
+  @media (max-width: $large-width) {
+    padding:25px;
+}
+@media (max-width: $tablet-width) {
+  padding: 12px ;
+  padding-top: 1px;
+}
+}
+
+.answers__button-wrapper {
+  padding-left: 50px;
+  @media (max-width: $tablet-width) {
+    margin-left: -500px;
+  }
+
+}
+
+.answers__button-question {
+  width: 793px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: flex-end;
+  @media (max-width: $large-width) {
+    max-width: 553px;
+}
+@media (max-width: $tablet-width) {
+
+}
+}
+
+.answers__btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: -15px;
+}
+

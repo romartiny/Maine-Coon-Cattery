@@ -1,0 +1,180 @@
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba($color: #674C33, $alpha: 0.3);
+  text-align: center;
+  z-index: 3;
+
+}
+
+.modal__close {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  right: -60%;
+  top: -5px;
+  margin-left: 225px;
+  margin-top: 30px;
+  @media (max-width: $large-width){
+    right: -3%;
+    top: -12px;
+}
+}
+
+.modal__form {
+  display: inline-block;
+  text-align: left;
+  padding-top: 0;
+  padding-bottom: 0;
+  vertical-align: middle;
+  width: 680px;
+  background-color: #FFFFFF;
+  padding: 0px 50px;
+  border-radius: 10px;
+  @media (max-width: $large-width) {
+    width: 284px;
+    padding:0px 20px;
+}
+}
+
+.modal__info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: -20px;
+}
+
+.modal__title {
+  margin-top: -25px;
+  font-family: $yesevaone;
+  font-size: 24px;
+  color: #674C33;
+  @media (max-width: $large-width) {
+    font-size: 18px;
+}
+}
+
+.modal__description {
+  font-family: $roboto;
+  font-weight: 400;
+  font-size: 18px;
+  color: #674C33;
+  margin-top: 35px;
+  margin-bottom: 50px;
+  margin-left: 0;
+  margin-right: 0;
+  @media (max-width: $large-width) {
+    font-size: 16px;
+    width: 260px;
+    margin: 25px 0px;
+}
+}
+
+.modal__name {
+  order: -1;
+  width: 280px;
+  font-family: $roboto;
+  font-weight: 700;
+  font-size: 16px;
+  color: #674C33;
+  @media (max-width: $large-width) {
+    margin-bottom: 11px;
+}
+}
+
+.modal__input {
+  margin-top: 15px;
+  width: 280px;
+  height: 55px;
+  padding-left: 25px;
+  border: 1px solid rgba($color: #674C33, $alpha: 1);
+  border-radius: 5px;
+  border-width: 1px;
+  opacity: 0.2;
+  @media (max-width: $large-width) {
+    margin-bottom: 20px;
+    width: 244px;
+}
+}
+
+.modal__phone {
+  width: 280px;
+  margin-bottom: 20px;
+  font-family: $roboto;
+  font-weight: 700;
+  font-size: 16px;
+  color: #674C33;
+}
+
+.modal__title {
+  font-family: $yesevaone;
+  font-size: 24px;
+  color: #674C33;
+}
+
+.modal__description {
+  font-family: $roboto;
+  font-weight: 400;
+  font-size: 18px;
+  color: #674C33;
+}
+
+.modal__name {
+  font-family: $roboto;
+  font-weight: 700;
+  font-size: 16px;
+  color: #674C33;
+}
+
+.modal__phone {
+  font-family: $roboto;
+  font-weight: 700;
+  font-size: 16px;
+  color: #674C33;
+}
+
+.modal__privacy {
+  font-family: $roboto;
+  font-weight: 400;
+  font-size: 12px;
+  color: #B29375;
+  width: 265px;
+  margin-bottom: 40px;
+  @media (max-width: $large-width) {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    order: 1;
+    max-width: 230px;
+    font-size: 10px;
+}
+}
+
+.modal__btn {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  color: #FFFFFF;
+  height: 56px;
+  width: 280px;
+  background-color: #A07B50;
+  @media (max-width: $large-width) {
+    width: 244px;
+    height: 52px;
+    margin-bottom: 15px;
+}
+}
+
+.modal__privacy-link{
+  color: #B29375;
+  text-decoration: underline;
+}

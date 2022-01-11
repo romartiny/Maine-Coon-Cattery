@@ -1,0 +1,15 @@
+.hide-element{
+  display: none;
+}
+
+.hide-element-tab{
+  @media (max-width: $large-width){
+    display: none;
+  }
+}
+
+.hide-element-mob{
+  @media (max-width: $tablet-width){
+    display: none;
+  }
+}
